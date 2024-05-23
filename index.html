@@ -3,31 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JS2 - Advanced</title>
 </head>
 <body>
-    <h1>JS Exercise 3</h1>
-    <table>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 2</title>
+    <meta name="author" content="Julios Felisilda">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Javascript Advanced No.2</h1>
+    <table id="tblInput">
         <tr>
-            <td>
-                <label for="elements">Input Number: </label>
+            <td width="45%">
+                <label for="txtFname">First Name:</label>
             </td>
             <td>
-                <input type="number" name="input" id="input">
+                <input type="text">
             </td>
         </tr>
+
         <tr>
-            <td></td>
             <td>
-                <button onclick="pushToArr()">Insert</button>
-                <button onclick="clearEntries()">Delete All</button>
+                <label for="">Middle Name:</label>
+            </td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="">Last Name:</label>
+            </td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="">Age:</label>
+            </td>
+            <td>
+                <input type="number">
+            </td>
+        </tr>
+
+        <tr style="height:20px;">
+            <td>
+ 
+            </td>
+            <td style="padding-top: 15px;">
+                <button id="btnInsertUpdate" value="insert">Insert</button>
+                <button id="btnClear">Clear</button>
             </td>
         </tr>
     </table>
-    <p style="font-weight: bold;">Elements inside the array:</p>
-    <p id="elements"></p>
-    <p>Sum:  <span id="sum"></span> <br>Highest:  <span id="highest"></span> <br>Lowest:  <span id="lowest"></span></p>
+    <br>
+
+    <fieldset>
+        <legend>Records</legend>
+        <p id="status" style="color:red; font-size: 12px;"></p>
+        <table id="tblRecords" style="border-collapse: collapse; margin: auto;">
+        </table>
+    </fieldset>
+
+    <button id="btnClearItems" style="margin-top: 10px;">Clear Records</button>
+
+    <label id="btn1-label" for="btn1" style="margin-top: 10px; "
+      >Sort by:</label
+    >
+    <select name="" id="btn1" style="margin-top: 10px; ">
+      <option disabled value="" selected>Please select</option>
+      <option value="1">First Name</option>
+      <option value="2">Last Name</option>
+    </select>
+    <select name="" id="btn2" style="margin-top: 10px;">
+      <option disabled value="" selected>Please select</option>
+      <option value="1">A-Z</option>
+      <option value="2">Z-A</option>
+    </select>
+    <button id="btn3" style="margin-top: 10px;">Save to Local Storage</button>
 
     <script src="main.js"></script>
+</body>
+</html>
 </body>
 </html>
